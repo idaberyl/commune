@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(242, 248, 250);
+}
+header{
+    display: flex;
+    align-items: center;
+    margin: 40px 80px 0 80px;
+}
+nav{
+   flex: 1;
+   text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+li a{ 
+    text-decoration: none;
+    color: grey;
+    padding: 20px;  
+}
+ li a:hover{
+    background-color: rgb(71, 71, 134);
+    color: white;
+}
+ header button{
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    background-color: rgb(10, 2, 59);
+    color: white;   
+    cursor: pointer; 
+}
+main{
+    margin-left:  80px; 
+    margin-right: 80px;
+}
+main button{
+    padding: 13px ;
+    background-color: rgb(10, 2, 59);
+    border: none;
+    color: grey;
+    border-radius: 25px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+main button a{
+    color: gray;
+}
+.font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(10, 2, 59);
+    line-height: 50px;
+    margin: 1px;
+}
+.font-2{
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    font-weight: lighter;
+    line-height: 20px;
+}
+.image_1{
+    max-width: 25%;
+    position: absolute;
+    top: 180px;
+    right: 200px;
+}
+form{
+    padding-top: 20px;
+}
+input{
+    padding: 10px;
+}
+.email{
+    width: 250px;
+}
+.submit{
+    padding: 15px;
+    border-radius: 3px;
+    border: none;
+    display: inline-block;
+    background-color: rgb(10, 2, 59);
+    color: white;   
+    cursor: pointer; 
+} 
+.logos{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: gray;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+@media screen  and (max-width: 800px){
+    
+    .image_1{
+        display: none;
+    }
+   main  button{
+        margin-left: 40px;
+        width: 550px
+    }
+    .font, .font-2{
+        text-align: center;
+    
+        
+    }
+    .font{
+        font-size: 60px;
+        line-height: 70px;
+        margin-bottom: 10px;
+    }
+    .font-2{
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .email{
+        width: 350px;
+        margin-left: 90px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .image_1{
+        display: none;
+    }
+   .font, .font-2{
+    text-align: center;
+   }
+   .font{
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 400;
+   }
+   .font-2{
+    font-size: 18px;
+    line-height: 30px;
+   }
+   input{
+    display: flex;
+    align-items: center;
+   }
+   .email{
+    width: 200px;
+    margin-top: -3px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+   }
+   .submit{
+    width: 200px;
+   }
+   main{
+    padding: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+   }
+   main button{
+    margin-left: 1px;
+    width: 250px;
+   }
+}
