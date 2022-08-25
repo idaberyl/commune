@@ -216,6 +216,7 @@ input{
     margin-left: auto;
     margin-right: auto;
    }
+<<<<<<< HEAD:Files/style.css
    .sidenav{
     background-color: skyblue;
     height: 100%;
@@ -260,3 +261,6 @@ input{
         display: none;
     }
 }
+=======
+}
+>>>>>>> 82429ad681b48ca9f49bc878c9776360eb312009:style.css
