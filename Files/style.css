@@ -8,12 +8,8 @@ body{
 }
 header{
     display: flex;
-    align-items: center;
-    margin: 40px 80px 0 80px;
-}
-nav{
-   flex: 1;
-   text-align: right;
+    justify-content: space-between;
+    margin: 40px 40px 0 40px;
 }
 nav ul{
     display: inline-block;
@@ -27,10 +23,6 @@ li a{
     text-decoration: none;
     color: grey;
     padding: 20px;  
-}
- li a:hover{
-    background-color: rgb(71, 71, 134);
-    color: white;
 }
  header button{
     padding: 15px;
@@ -100,73 +92,171 @@ input{
     padding-top: 50px;
     padding-bottom: 20px;
 }
-@media screen  and (max-width: 800px){
+@media screen  and (min-width: 600px) and (max-width : 900px){
     
     .image_1{
         display: none;
     }
-   main  button{
+    main{
         margin-left: 40px;
-        width: 550px
+        margin-right: 40px;
+    }
+    main button{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .font, .font-2{
-        text-align: center;
-    
-        
+        text-align: center;  
     }
     .font{
-        font-size: 60px;
+        font-size: 3.5em;
         line-height: 70px;
         margin-bottom: 10px;
+        font-weight: 500;
     }
     .font-2{
-        font-size: 24px;
+        font-size: 1.2em;
         line-height: 30px;
         margin-bottom: 20px;
     }
+    br{
+        display: none;
+    }
+    .sidenav{
+        background-color: skyblue;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        text-align: center;
+    }
+    .closenav{
+        background: transparent;
+        color: black;
+        font-size: 40px;
+        position: relative;
+        bottom: 20px;
+        left: 50px;
+    }
+    .hamnav{
+        position: absolute;
+        top: 50px;
+        right: 15px;
+        font-size: 30px;
+        
+    }
+    .sidenav ul{
+        margin-top: 40px;
+    }
+    .sidenav a{
+        display: block;
+    }
+    .waitlist{
+        width: 80%;
+        margin-top: 40px;
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .email{
-        width: 350px;
-        margin-left: 90px;
-        margin-right: 10px;
+        width: 60%;
+        margin-right: 15px;
+    }
+    .social-icons > a{
+        margin-right: 20px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width : 520px) {
     .image_1{
+        display: none;
+    }
+    .social-icons > a{
+        margin-right: 10px;
+    }
+    br{
         display: none;
     }
    .font, .font-2{
     text-align: center;
    }
    .font{
-    font-size: 48px;
-    line-height: 56px;
-    font-weight: 400;
+    font-size: 2em;
+    line-height: 40px;
+    font-weight: 600;
    }
    .font-2{
     font-size: 18px;
     line-height: 30px;
    }
    input{
-    display: flex;
-    align-items: center;
+    width: 100%;
+   }
+   input[type = "email"]::placeholder{
+    color: gray;
    }
    .email{
-    width: 200px;
-    margin-top: -3px;
-    margin-left: 2px;
     margin-bottom: 10px;
+    width: 100%;
    }
    .submit{
-    width: 200px;
+    display: block;
    }
    main{
-    padding: 15px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
    }
    main button{
-    margin-left: 1px;
-    width: 250px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
    }
+   .sidenav{
+    background-color: skyblue;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    text-align: center;
+   }
+   .closenav{
+    background: transparent;
+    color: black;
+    font-size: 40px;
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+   }
+   .hamnav{
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    font-size: 30px;
+    
+   }
+   .sidenav ul{
+    margin-top: 40px;
+   }
+   .sidenav a{
+    display: block;
+   }
+   .waitlist{
+    width: 80%;
+    margin-top: 40px;
+   }
+}
+@media screen and (min-width : 1240px) and (max-width : 1440px) {
+    .hamnav{
+        display: none;
+    }
+    .closenav{
+        display: none;
+    }
 }
